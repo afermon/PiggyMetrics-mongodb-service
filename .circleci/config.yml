@@ -59,7 +59,6 @@ workflows:
               only: master
       - deploy_gcp:
           requires:
-            - build
             - request-testing
           filters:
             branches:
